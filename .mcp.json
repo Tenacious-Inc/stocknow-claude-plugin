@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "stocknow": {
+      "type": "http",
+      "url": "https://mcp.stocknow.ai/mcp"
+    }
+  }
+}

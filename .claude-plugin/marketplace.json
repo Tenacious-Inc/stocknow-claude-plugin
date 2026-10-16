@@ -1,0 +1,13 @@
+{
+  "name": "stocknow-plugins",
+  "description": "StockNow market data MCP plugin for Claude Code by Tenacious Inc.",
+  "owner": {
+    "name": "Tenacious Inc."
+  },
+  "plugins": [
+    {
+      "name": "stocknow",
+      "source": "."
+    }
+  ]
+}

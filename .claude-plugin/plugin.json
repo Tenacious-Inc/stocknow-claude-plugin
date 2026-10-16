@@ -1,0 +1,11 @@
+{
+  "name": "stocknow",
+  "version": "0.1.0",
+  "description": "Connect Claude Code to StockNow market data, earnings, news, and SEC filings. Requires StockNow PRO and OAuth sign-in.",
+  "author": {
+    "name": "Tenacious Inc.",
+    "url": "https://stocknow.ai/en"
+  },
+  "homepage": "https://stocknow.ai/en/mcp",
+  "keywords": ["stocknow", "finance", "market-data", "mcp"]
+}

@@ -1,0 +1,36 @@
+# Local credentials and environment files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+.credentials.json
+credentials.json
+.claude.json
+.claude/
+
+# Agent/editor state and operating-system files
+.omc/
+.codex/
+.agents/
+.idea/
+.vscode/
+.DS_Store
+._*
+*.swp
+*.swo
+*~
+
+# Generated files (this plugin requires no build or dependencies)
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.mcpb-cache/
+__pycache__/
+*.py[cod]
+*.log
+*.zip
+*.tgz
