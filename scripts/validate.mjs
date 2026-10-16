@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Repository contract checks plus Claude Code's official offline validator/loader.
+// Repository contract checks plus Claude's official offline plugin validator/loader.
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import { mkdtempSync, readFileSync, readdirSync, rmSync } from 'node:fs';
@@ -35,7 +35,7 @@ assert.deepEqual(mcp, {
 }, 'MCP config must contain only the public HTTP endpoint, without credentials or commands');
 assert.deepEqual(marketplace, {
   name: 'stocknow-plugins',
-  description: 'StockNow market data MCP plugin for Claude Code by Tenacious Inc.',
+  description: 'StockNow market data MCP plugin for Claude by Tenacious Inc.',
   owner: { name: 'Tenacious Inc.' },
   plugins: [{ name: plugin.name, source: '.' }],
 }, 'The marketplace must resolve the plugin to this repository root');
@@ -115,7 +115,7 @@ try {
   assert.match(details, /stocknow/);
   assert.match(details, /MCP servers\s*\(1\)/i);
   console.log('PASS Claude component inventory: one MCP server');
-  console.log('Authenticated MCP tool calls were not tested; OAuth + StockNow PRO are required.');
+  console.log('Authenticated MCP tool calls were not tested; OAuth + a StockNow account are required.');
 } finally {
   rmSync(temporary, { recursive: true, force: true });
 }
